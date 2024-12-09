@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Bank</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#log">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="withdraw.html">Withdraw</a></li>
+                <li><a href="deposit.html">Deposit</a></li>
+                <li><a href="transactions.html">All Transactions</a></li> <!-- Added All Transactions link -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to My Bank</h2>
+        <p>Your trusted financial partner.</p>
+        <a href="login.html" class="btn" id="log">Login to your account</a>
+    </section>
+
+    <section class="transactions" id="transactions">
+        <h2>All Transactions</h2>
+        <div id="transaction-list">
+            <!-- Transaction list will be populated dynamically by JavaScript -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Bank. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
