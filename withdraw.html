@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw - My Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Bank</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="withdraw.html">Withdraw</a></li>
+                <li><a href="deposit.html">Deposit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="withdraw-container">
+        <h2>Withdraw Money</h2>
+        <p>Your current balance: $<span id="balance">5000</span></p>
+        <form id="withdraw-form">
+            <input type="number" id="withdraw-amount" placeholder="Amount to Withdraw" required>
+            <input type="submit" value="Withdraw">
+        </form>
+        <p id="error-message" style="color: red; display: none;">Insufficient funds.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Bank. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
